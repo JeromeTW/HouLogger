@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026FD3722371A3C4009E0E0C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3712371A3C4009E0E0C /* DateExtension.swift */; };
+		026FD3762371A3DD009E0E0C /* AdvancedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */; };
+		026FD3772371A3DD009E0E0C /* BaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3742371A3DD009E0E0C /* BaseLogger.swift */; };
+		026FD3782371A3DD009E0E0C /* LogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3752371A3DD009E0E0C /* LogTextView.swift */; };
+		152B6889392C6454A2E20F2259F28A89 /* Pods-HouLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AD7233CDBD4DC445AE64E18A11781B /* Pods-HouLogger_Tests-dummy.m */; };
+		24DFEB29FCAE379B460342846DE913B7 /* Pods-HouLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE35B54CB8D2BFEE0DBB2F45BB0993E /* Pods-HouLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56099D0AC5B5C21EC19603E053AA9A8E /* HouLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C89F291158EA9412A15052CA48B60EEC /* HouLogger-dummy.m */; };
+		5643CDE6E654D02758194B60E55A17F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		81CF1F3C1F3F613EEF1F124DAD2A2D9C /* Pods-HouLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E307C2BC55D7362BED00B9D10B583E35 /* Pods-HouLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BBF4350C85B63D65278AC8A6BB80284 /* HouLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 464FDBF798D57E8A004D2415357CBD90 /* HouLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A628B57E0C6C5F8589E5D04E6027F7E7 /* Pods-HouLogger_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4AF569F6233282A41FBBE23344286A5 /* Pods-HouLogger_Example-dummy.m */; };
+		DDCF4D751639650FFFC0A1E47A61A0CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F5D202927574539316FC2DF32D2F6E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A03CB65679104C3A766CCA8ED45D19E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFC32249E5CA740412359A01DAAF16F5;
+			remoteInfo = "Pods-HouLogger_Example";
+		};
+		B17F7F73631F08DBA2C36128EF77BEFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F72826B5E3389B43904BA29DFA4EB6B4;
+			remoteInfo = HouLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026FD3712371A3C4009E0E0C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedLogger.swift; sourceTree = "<group>"; };
+		026FD3742371A3DD009E0E0C /* BaseLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLogger.swift; sourceTree = "<group>"; };
+		026FD3752371A3DD009E0E0C /* LogTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTextView.swift; sourceTree = "<group>"; };
+		07E9A0C1629618BA01D570620BC517F1 /* Pods-HouLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HouLogger_Tests.modulemap"; sourceTree = "<group>"; };
+		14563FA41CB5D43A26DAE0691A4D43B8 /* HouLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HouLogger-prefix.pch"; sourceTree = "<group>"; };
+		1A576899B2D007EE9E2118108A426921 /* Pods-HouLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		28A494133D74C0F85C6D17B1B90BFC10 /* HouLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HouLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		29BE5EA2145361C5A9ECB90D438DB42D /* HouLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HouLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A50ACFE39A815CB0EE874C287B8B0FA /* HouLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HouLogger.xcconfig; sourceTree = "<group>"; };
+		3E1B0A61848353FF4800ABE0C83866B6 /* Pods-HouLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		464FDBF798D57E8A004D2415357CBD90 /* HouLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HouLogger-umbrella.h"; sourceTree = "<group>"; };
+		47A8557CC6B7590F2CF8943BE0EECB4F /* Pods-HouLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4E5D8E539F384EF38ED0C489E7C0F6B6 /* Pods-HouLogger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Tests-Info.plist"; sourceTree = "<group>"; };
+		59AC47A9DF4FC84B6718E9BD31AE09BC /* Pods_HouLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A1C106FAC915076F5CB20CD73F61C41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5E252C24ACC6EDAADB9369DBF361B961 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6449EE92ABB5E0FB8F3FD921B913ABDA /* Pods-HouLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
+		656D824F89EAC78324FBBD17DB13AF38 /* Pods-HouLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HouLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		674F602090370344C21F8C85ABF10DC2 /* HouLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HouLogger.modulemap; sourceTree = "<group>"; };
+		7C8560A73E0CB36798B9EF1B273B007A /* HouLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HouLogger-Info.plist"; sourceTree = "<group>"; };
+		85F8E97F20FFEC59A5188CCB39014BE9 /* Pods-HouLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HouLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
+		87AD7233CDBD4DC445AE64E18A11781B /* Pods-HouLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HouLogger_Tests-dummy.m"; sourceTree = "<group>"; };
+		9BD4B8A5723010F57339D888F22BEAEB /* Pods-HouLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE0F6CAF8A54C8379164DC8AD95B4D88 /* Pods-HouLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HouLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B4AF569F6233282A41FBBE23344286A5 /* Pods-HouLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HouLogger_Example-dummy.m"; sourceTree = "<group>"; };
+		BDDEB9A1D01780CC9DD012CB272C6222 /* Pods-HouLogger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Example-Info.plist"; sourceTree = "<group>"; };
+		C89F291158EA9412A15052CA48B60EEC /* HouLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HouLogger-dummy.m"; sourceTree = "<group>"; };
+		CA6838A33BB825F6FC72E0D4DB86C5F1 /* Pods_HouLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9B46C3760F4512A76B7CEAA54798D0 /* Pods-HouLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE35B54CB8D2BFEE0DBB2F45BB0993E /* Pods-HouLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HouLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E307C2BC55D7362BED00B9D10B583E35 /* Pods-HouLogger_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HouLogger_Example-umbrella.h"; sourceTree = "<group>"; };
+		EE1A4F2B7F7FA93887F4F592B60F73AF /* Pods-HouLogger_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HouLogger_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160DA401690ADFB1BD8B74B8AB52D8D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5643CDE6E654D02758194B60E55A17F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1F67EF65C80C494AB62502155413E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCF4D751639650FFFC0A1E47A61A0CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E571DDB7E995DB5EF24BC9A49DFB7AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D202927574539316FC2DF32D2F6E3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026FD3702371A3B1009E0E0C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */,
+				026FD3742371A3DD009E0E0C /* BaseLogger.swift */,
+				026FD3752371A3DD009E0E0C /* LogTextView.swift */,
+				026FD3712371A3C4009E0E0C /* DateExtension.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		10CEF2BDBAF301FEBA4483B3F227D06C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28A494133D74C0F85C6D17B1B90BFC10 /* HouLogger.framework */,
+				59AC47A9DF4FC84B6718E9BD31AE09BC /* Pods_HouLogger_Example.framework */,
+				CA6838A33BB825F6FC72E0D4DB86C5F1 /* Pods_HouLogger_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E7EE165416F69F5B47C2D9DFA38F543 /* HouLogger */ = {
+			isa = PBXGroup;
+			children = (
+				026FD3702371A3B1009E0E0C /* Classes */,
+				BFA95C8F40F17C7A4342CD51EC868666 /* Pod */,
+				75FB3A4401AB9C5CE2AEA31250B311E4 /* Support Files */,
+			);
+			name = HouLogger;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		370695B7301DDB5DB4B6A635C782C24D /* Pods-HouLogger_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EE1A4F2B7F7FA93887F4F592B60F73AF /* Pods-HouLogger_Example.modulemap */,
+				656D824F89EAC78324FBBD17DB13AF38 /* Pods-HouLogger_Example-acknowledgements.markdown */,
+				1A576899B2D007EE9E2118108A426921 /* Pods-HouLogger_Example-acknowledgements.plist */,
+				B4AF569F6233282A41FBBE23344286A5 /* Pods-HouLogger_Example-dummy.m */,
+				85F8E97F20FFEC59A5188CCB39014BE9 /* Pods-HouLogger_Example-frameworks.sh */,
+				BDDEB9A1D01780CC9DD012CB272C6222 /* Pods-HouLogger_Example-Info.plist */,
+				E307C2BC55D7362BED00B9D10B583E35 /* Pods-HouLogger_Example-umbrella.h */,
+				47A8557CC6B7590F2CF8943BE0EECB4F /* Pods-HouLogger_Example.debug.xcconfig */,
+				6449EE92ABB5E0FB8F3FD921B913ABDA /* Pods-HouLogger_Example.release.xcconfig */,
+			);
+			name = "Pods-HouLogger_Example";
+			path = "Target Support Files/Pods-HouLogger_Example";
+			sourceTree = "<group>";
+		};
+		51E77259AD4C33D317641E50484A8690 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E7EE165416F69F5B47C2D9DFA38F543 /* HouLogger */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6014193B13928571582D9EA281E2A4AF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				370695B7301DDB5DB4B6A635C782C24D /* Pods-HouLogger_Example */,
+				978C49569B80C1EE9BE702F37BAC4D3F /* Pods-HouLogger_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		75FB3A4401AB9C5CE2AEA31250B311E4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				674F602090370344C21F8C85ABF10DC2 /* HouLogger.modulemap */,
+				3A50ACFE39A815CB0EE874C287B8B0FA /* HouLogger.xcconfig */,
+				C89F291158EA9412A15052CA48B60EEC /* HouLogger-dummy.m */,
+				7C8560A73E0CB36798B9EF1B273B007A /* HouLogger-Info.plist */,
+				14563FA41CB5D43A26DAE0691A4D43B8 /* HouLogger-prefix.pch */,
+				464FDBF798D57E8A004D2415357CBD90 /* HouLogger-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HouLogger";
+			sourceTree = "<group>";
+		};
+		978C49569B80C1EE9BE702F37BAC4D3F /* Pods-HouLogger_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				07E9A0C1629618BA01D570620BC517F1 /* Pods-HouLogger_Tests.modulemap */,
+				AE0F6CAF8A54C8379164DC8AD95B4D88 /* Pods-HouLogger_Tests-acknowledgements.markdown */,
+				9BD4B8A5723010F57339D888F22BEAEB /* Pods-HouLogger_Tests-acknowledgements.plist */,
+				87AD7233CDBD4DC445AE64E18A11781B /* Pods-HouLogger_Tests-dummy.m */,
+				4E5D8E539F384EF38ED0C489E7C0F6B6 /* Pods-HouLogger_Tests-Info.plist */,
+				DBE35B54CB8D2BFEE0DBB2F45BB0993E /* Pods-HouLogger_Tests-umbrella.h */,
+				CE9B46C3760F4512A76B7CEAA54798D0 /* Pods-HouLogger_Tests.debug.xcconfig */,
+				3E1B0A61848353FF4800ABE0C83866B6 /* Pods-HouLogger_Tests.release.xcconfig */,
+			);
+			name = "Pods-HouLogger_Tests";
+			path = "Target Support Files/Pods-HouLogger_Tests";
+			sourceTree = "<group>";
+		};
+		BFA95C8F40F17C7A4342CD51EC868666 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				29BE5EA2145361C5A9ECB90D438DB42D /* HouLogger.podspec */,
+				5A1C106FAC915076F5CB20CD73F61C41 /* LICENSE */,
+				5E252C24ACC6EDAADB9369DBF361B961 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				51E77259AD4C33D317641E50484A8690 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				10CEF2BDBAF301FEBA4483B3F227D06C /* Products */,
+				6014193B13928571582D9EA281E2A4AF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		726F8B4E6126A2770EAE1F66BDB3C7A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BBF4350C85B63D65278AC8A6BB80284 /* HouLogger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2AB768E12503BC60EF8060F7AEB47A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CF1F3C1F3F613EEF1F124DAD2A2D9C /* Pods-HouLogger_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B266368383A391289F7BC4C5B3978A40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DFEB29FCAE379B460342846DE913B7 /* Pods-HouLogger_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		574AA6E02C476B6CDB90326CA0EC4E7C /* Pods-HouLogger_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B17BF603A7F18187059953E86D372CE5 /* Build configuration list for PBXNativeTarget "Pods-HouLogger_Tests" */;
+			buildPhases = (
+				B266368383A391289F7BC4C5B3978A40 /* Headers */,
+				DE914AFE16FAFD0BE0EAD280CACD78E0 /* Sources */,
+				160DA401690ADFB1BD8B74B8AB52D8D0 /* Frameworks */,
+				0EC39E7328A195074BA22D5D20D0D89E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D765A6849851DADEBE0FAE2E517B9F2 /* PBXTargetDependency */,
+			);
+			name = "Pods-HouLogger_Tests";
+			productName = "Pods-HouLogger_Tests";
+			productReference = CA6838A33BB825F6FC72E0D4DB86C5F1 /* Pods_HouLogger_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFC32249E5CA740412359A01DAAF16F5 /* Pods-HouLogger_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66C0C72536F49251E95A36AF9F808C7C /* Build configuration list for PBXNativeTarget "Pods-HouLogger_Example" */;
+			buildPhases = (
+				9A2AB768E12503BC60EF8060F7AEB47A /* Headers */,
+				48041A7A32A1F6716D780830DBF6038A /* Sources */,
+				7E1F67EF65C80C494AB62502155413E6 /* Frameworks */,
+				B384F28E3461F364334AF39D428C50B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5645355CEDFF9F26249912DC4F2F4565 /* PBXTargetDependency */,
+			);
+			name = "Pods-HouLogger_Example";
+			productName = "Pods-HouLogger_Example";
+			productReference = 59AC47A9DF4FC84B6718E9BD31AE09BC /* Pods_HouLogger_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F72826B5E3389B43904BA29DFA4EB6B4 /* HouLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F97823D1EEA7E60A5C62D8A57781EF /* Build configuration list for PBXNativeTarget "HouLogger" */;
+			buildPhases = (
+				726F8B4E6126A2770EAE1F66BDB3C7A9 /* Headers */,
+				F900B1501BBD3BD32860875D61C52758 /* Sources */,
+				9E571DDB7E995DB5EF24BC9A49DFB7AA /* Frameworks */,
+				AE27EBE514C9E7DB91F8DFD91EE49D21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HouLogger;
+			productName = HouLogger;
+			productReference = 28A494133D74C0F85C6D17B1B90BFC10 /* HouLogger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					F72826B5E3389B43904BA29DFA4EB6B4 = {
+						LastSwiftMigration = 1110;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 10CEF2BDBAF301FEBA4483B3F227D06C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F72826B5E3389B43904BA29DFA4EB6B4 /* HouLogger */,
+				BFC32249E5CA740412359A01DAAF16F5 /* Pods-HouLogger_Example */,
+				574AA6E02C476B6CDB90326CA0EC4E7C /* Pods-HouLogger_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EC39E7328A195074BA22D5D20D0D89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE27EBE514C9E7DB91F8DFD91EE49D21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B384F28E3461F364334AF39D428C50B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48041A7A32A1F6716D780830DBF6038A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A628B57E0C6C5F8589E5D04E6027F7E7 /* Pods-HouLogger_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE914AFE16FAFD0BE0EAD280CACD78E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152B6889392C6454A2E20F2259F28A89 /* Pods-HouLogger_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F900B1501BBD3BD32860875D61C52758 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026FD3782371A3DD009E0E0C /* LogTextView.swift in Sources */,
+				026FD3762371A3DD009E0E0C /* AdvancedLogger.swift in Sources */,
+				56099D0AC5B5C21EC19603E053AA9A8E /* HouLogger-dummy.m in Sources */,
+				026FD3772371A3DD009E0E0C /* BaseLogger.swift in Sources */,
+				026FD3722371A3C4009E0E0C /* DateExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5645355CEDFF9F26249912DC4F2F4565 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HouLogger;
+			target = F72826B5E3389B43904BA29DFA4EB6B4 /* HouLogger */;
+			targetProxy = B17F7F73631F08DBA2C36128EF77BEFF /* PBXContainerItemProxy */;
+		};
+		8D765A6849851DADEBE0FAE2E517B9F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HouLogger_Example";
+			target = BFC32249E5CA740412359A01DAAF16F5 /* Pods-HouLogger_Example */;
+			targetProxy = A03CB65679104C3A766CCA8ED45D19E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C172E9485A8377F08F76A2FD749EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9B46C3760F4512A76B7CEAA54798D0 /* Pods-HouLogger_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HouLogger_Tests/Pods-HouLogger_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HouLogger_Tests/Pods-HouLogger_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1467D26DBA15302EFEC7C017F0FCDAD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E1B0A61848353FF4800ABE0C83866B6 /* Pods-HouLogger_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HouLogger_Tests/Pods-HouLogger_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HouLogger_Tests/Pods-HouLogger_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33CFE6FD6F0B037BA913D35DFB495701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6449EE92ABB5E0FB8F3FD921B913ABDA /* Pods-HouLogger_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HouLogger_Example/Pods-HouLogger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HouLogger_Example/Pods-HouLogger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		898861E8EBA866CED8389895235D1DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A50ACFE39A815CB0EE874C287B8B0FA /* HouLogger.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HouLogger/HouLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HouLogger/HouLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HouLogger/HouLogger.modulemap";
+				PRODUCT_MODULE_NAME = HouLogger;
+				PRODUCT_NAME = HouLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CF1AE4752A9E63787DD6F13759DA217E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47A8557CC6B7590F2CF8943BE0EECB4F /* Pods-HouLogger_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HouLogger_Example/Pods-HouLogger_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HouLogger_Example/Pods-HouLogger_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EEAE30BF29FE297460D0A9C1E689D11C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A50ACFE39A815CB0EE874C287B8B0FA /* HouLogger.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HouLogger/HouLogger-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HouLogger/HouLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HouLogger/HouLogger.modulemap";
+				PRODUCT_MODULE_NAME = HouLogger;
+				PRODUCT_NAME = HouLogger;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66C0C72536F49251E95A36AF9F808C7C /* Build configuration list for PBXNativeTarget "Pods-HouLogger_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF1AE4752A9E63787DD6F13759DA217E /* Debug */,
+				33CFE6FD6F0B037BA913D35DFB495701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B17BF603A7F18187059953E86D372CE5 /* Build configuration list for PBXNativeTarget "Pods-HouLogger_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C172E9485A8377F08F76A2FD749EEC /* Debug */,
+				1467D26DBA15302EFEC7C017F0FCDAD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F97823D1EEA7E60A5C62D8A57781EF /* Build configuration list for PBXNativeTarget "HouLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEAE30BF29FE297460D0A9C1E689D11C /* Debug */,
+				898861E8EBA866CED8389895235D1DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

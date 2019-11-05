@@ -1,0 +1,16 @@
+PODS:
+  - HouLogger (0.1.0)
+
+DEPENDENCIES:
+  - HouLogger (from `../`)
+
+EXTERNAL SOURCES:
+  HouLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HouLogger: 6d50ed9fd3ee60c646ac7c5e1a38335a6fed6280
+
+PODFILE CHECKSUM: d37e045ba6978a01cc0be7f4badf3388eb718b41
+
+COCOAPODS: 1.7.5

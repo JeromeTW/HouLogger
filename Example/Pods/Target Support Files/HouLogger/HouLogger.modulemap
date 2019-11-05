@@ -1,0 +1,6 @@
+framework module HouLogger {
+  umbrella header "HouLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}
