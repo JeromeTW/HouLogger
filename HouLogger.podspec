@@ -25,8 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jerome.developer.tw@gmail.com' => 'jerome.developer.tw@gmail.com' }
-  # s.source           = { :git => 'git@github.com:JeromeTW/HouLogger.git', :tag => s.version.to_s }
-  s.source           = { :git => 'git@github.com:JeromeTW/HouLogger.git', :commit => "24c392c3e6891412280ee40adf956c7a08ef9cd5" }
+  s.source           = { :git => 'git@github.com:JeromeTW/HouLogger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
