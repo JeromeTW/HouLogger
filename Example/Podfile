@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HouLogger_Example' do
+  pod 'HouLogger', :path => '../'
+
+  target 'HouLogger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
