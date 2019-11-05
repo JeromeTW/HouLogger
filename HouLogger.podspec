@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/jerome.developer.tw@gmail.com/HouLogger'
+  s.homepage         = 'https://github.com/JeromeTW/HouLogger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jerome.developer.tw@gmail.com' => 'jerome.developer.tw@gmail.com' }
-  s.source           = { :git => 'https://github.com/jerome.developer.tw@gmail.com/HouLogger.git', :tag => s.version.to_s }
+  s.source           = { :git => 'git@github.com:JeromeTW/HouLogger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HouLogger/Classes/'
+  s.source_files = 'HouLogger/HouLogger/Classes/**/*'
   
   # s.resource_bundles = {
   #   'HouLogger' => ['HouLogger/Assets/*.png']
