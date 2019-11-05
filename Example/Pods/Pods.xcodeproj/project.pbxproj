@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		026FD3722371A3C4009E0E0C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3712371A3C4009E0E0C /* DateExtension.swift */; };
-		026FD3762371A3DD009E0E0C /* AdvancedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */; };
-		026FD3772371A3DD009E0E0C /* BaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3742371A3DD009E0E0C /* BaseLogger.swift */; };
-		026FD3782371A3DD009E0E0C /* LogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD3752371A3DD009E0E0C /* LogTextView.swift */; };
+		026FD3802371AA00009E0E0C /* AdvancedLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD37B2371A9FF009E0E0C /* AdvancedLogger.swift */; };
+		026FD3822371AA00009E0E0C /* BaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD37D2371A9FF009E0E0C /* BaseLogger.swift */; };
+		026FD3832371AA00009E0E0C /* LogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD37E2371A9FF009E0E0C /* LogTextView.swift */; };
+		026FD3842371AA00009E0E0C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026FD37F2371A9FF009E0E0C /* DateExtension.swift */; };
 		152B6889392C6454A2E20F2259F28A89 /* Pods-HouLogger_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AD7233CDBD4DC445AE64E18A11781B /* Pods-HouLogger_Tests-dummy.m */; };
 		24DFEB29FCAE379B460342846DE913B7 /* Pods-HouLogger_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE35B54CB8D2BFEE0DBB2F45BB0993E /* Pods-HouLogger_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		56099D0AC5B5C21EC19603E053AA9A8E /* HouLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C89F291158EA9412A15052CA48B60EEC /* HouLogger-dummy.m */; };
@@ -40,10 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026FD3712371A3C4009E0E0C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedLogger.swift; sourceTree = "<group>"; };
-		026FD3742371A3DD009E0E0C /* BaseLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLogger.swift; sourceTree = "<group>"; };
-		026FD3752371A3DD009E0E0C /* LogTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTextView.swift; sourceTree = "<group>"; };
+		026FD37B2371A9FF009E0E0C /* AdvancedLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedLogger.swift; sourceTree = "<group>"; };
+		026FD37D2371A9FF009E0E0C /* BaseLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLogger.swift; sourceTree = "<group>"; };
+		026FD37E2371A9FF009E0E0C /* LogTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTextView.swift; sourceTree = "<group>"; };
+		026FD37F2371A9FF009E0E0C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		07E9A0C1629618BA01D570620BC517F1 /* Pods-HouLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HouLogger_Tests.modulemap"; sourceTree = "<group>"; };
 		14563FA41CB5D43A26DAE0691A4D43B8 /* HouLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HouLogger-prefix.pch"; sourceTree = "<group>"; };
 		1A576899B2D007EE9E2118108A426921 /* Pods-HouLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -105,15 +105,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		026FD3702371A3B1009E0E0C /* Classes */ = {
+		026FD37A2371A9FF009E0E0C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				026FD3732371A3DD009E0E0C /* AdvancedLogger.swift */,
-				026FD3742371A3DD009E0E0C /* BaseLogger.swift */,
-				026FD3752371A3DD009E0E0C /* LogTextView.swift */,
-				026FD3712371A3C4009E0E0C /* DateExtension.swift */,
+				026FD37B2371A9FF009E0E0C /* AdvancedLogger.swift */,
+				026FD37D2371A9FF009E0E0C /* BaseLogger.swift */,
+				026FD37E2371A9FF009E0E0C /* LogTextView.swift */,
+				026FD37F2371A9FF009E0E0C /* DateExtension.swift */,
 			);
-			path = Classes;
+			name = Classes;
+			path = HouLogger/Classes;
 			sourceTree = "<group>";
 		};
 		10CEF2BDBAF301FEBA4483B3F227D06C /* Products */ = {
@@ -129,7 +130,7 @@
 		1E7EE165416F69F5B47C2D9DFA38F543 /* HouLogger */ = {
 			isa = PBXGroup;
 			children = (
-				026FD3702371A3B1009E0E0C /* Classes */,
+				026FD37A2371A9FF009E0E0C /* Classes */,
 				BFA95C8F40F17C7A4342CD51EC868666 /* Pod */,
 				75FB3A4401AB9C5CE2AEA31250B311E4 /* Support Files */,
 			);
@@ -402,11 +403,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026FD3782371A3DD009E0E0C /* LogTextView.swift in Sources */,
-				026FD3762371A3DD009E0E0C /* AdvancedLogger.swift in Sources */,
+				026FD3822371AA00009E0E0C /* BaseLogger.swift in Sources */,
+				026FD3842371AA00009E0E0C /* DateExtension.swift in Sources */,
 				56099D0AC5B5C21EC19603E053AA9A8E /* HouLogger-dummy.m in Sources */,
-				026FD3772371A3DD009E0E0C /* BaseLogger.swift in Sources */,
-				026FD3722371A3C4009E0E0C /* DateExtension.swift in Sources */,
+				026FD3832371AA00009E0E0C /* LogTextView.swift in Sources */,
+				026FD3802371AA00009E0E0C /* AdvancedLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
