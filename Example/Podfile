@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'HouLogger_Example' do
   pod 'HouLogger', :path => '../'
+  pod 'DeviceGuru'
 
   target 'HouLogger_Tests' do
     inherit! :search_paths
