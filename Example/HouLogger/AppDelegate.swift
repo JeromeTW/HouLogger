@@ -43,7 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     guard let window = window else { return }
     guard logger.shouldShow else { return }
 
-    logTextView.layer.zPosition = .greatestFiniteMagnitude
     if #available(iOS 11.0, *) {
       window.addSubview(logTextView, constraints: [
         UIView.anchorConstraintEqual(from: \UIView.topAnchor, to: \UIView.safeAreaLayoutGuide.topAnchor, constant: .defaultMargin),

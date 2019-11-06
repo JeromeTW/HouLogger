@@ -45,11 +45,10 @@ public enum LogLevel: Int, CustomStringConvertible {
   public let logger = BaseLogger() // Test Target 要測試時用這個
 #else
   public let logger = AdvancedLogger() // APP Target 用這個，此包含 UI 和 Log 檔案儲存。
-  public let logTextView = LogTextView()
 #endif
 
 public enum JeOSLog {
-  public static let subsystem = "me.jerome.Mod"
+  public static let subsystem = "me.exmaple.Test"
   case defaultLog, table, network, test, image
   public var osLog: OSLog {
     switch self {
