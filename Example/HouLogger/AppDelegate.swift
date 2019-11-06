@@ -14,6 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
+  enum APIError: Error {
+    case invalidURL
+  }
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
@@ -24,7 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
     window.makeKeyAndVisible()
     setupLogTextView()
-    logD("didFinishLaunchingWithOptions")
+    
+    // Demo
+    logI("info")
+    logD("debug")
+    logN("normal")
+    logE("Error String", theOSLog: .network)
+    logE(APIError.invalidURL, theOSLog: .network)
+    logF("fault", theOSLog: .test)
+    
     return true
   }
   
