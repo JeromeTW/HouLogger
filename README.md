@@ -12,6 +12,8 @@ HouLogger is a pretty, pure-Swift library for logging and saving log file in loc
 - [x] Log pretty.
 - [x] Save log in local disk.
 - [x] Show log on UIWindow.
+- [x] Record user APP version.
+- [x] Record user updated APP version History. e.g 1.0 -> 1.1 -> 1.5
 
 ## Start with HouLogger
 
@@ -22,7 +24,7 @@ HouLogger is a pretty, pure-Swift library for logging and saving log file in loc
 
 ```swift
 // configure in `application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool`
-    UserDefaults.standard.setAPPVersionAndHistory()
+    UserDefaults.standard.setAPPVersionAndHistory() // NOTE: Do not forget this line.
     logger.configure([.debug, .fault, .error, .info, .normal])
 
 // Usage
