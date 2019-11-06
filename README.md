@@ -9,9 +9,9 @@ HouLogger is a pretty, pure-Swift library for logging and saving log file in loc
 
 ## Features
 
-- [ x ] Log pretty.
-- [ x ] Save log in local disk.
-- [ x ] Show log on UIWindow.
+- [x] Log pretty.
+- [x] Save log in local disk.
+- [x] Show log on UIWindow.
 
 ## Start with HouLogger
 
