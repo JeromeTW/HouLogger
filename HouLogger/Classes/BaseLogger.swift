@@ -69,7 +69,7 @@ public enum JeOSLog {
 public class BaseLogger {
   // MARK: - Properties
 
-  public var logLevels = [LogLevel]()
+  var logLevels = [LogLevel]()
   public var shouldShow = false
   public var shouldCache = false
 

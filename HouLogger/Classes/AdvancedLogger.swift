@@ -28,7 +28,7 @@ extension FileManager {
     return urls(for: .cachesDirectory, in: .userDomainMask).first
   }
 
-  public func saveLog(_ logString: String) throws {
+  func saveLog(_ logString: String) throws {
     guard let cachesDirectory = cachesDirectory else { return }
     let currentDateString = Date().toString(dateFormat: "yyyyMMdd")
     let filePath = cachesDirectory.appendingPathComponent("\(currentDateString).log")
@@ -88,12 +88,12 @@ extension UserDefaults {
     return result
   }
 
-  public func setAPPVersion() {
+  func setAPPVersion() {
     let key = "APPVersion"
     set(version, forKey: key)
   }
 
-  public var lastVersion: String? {
+  var lastVersion: String? {
     let key = "APPVersion"
     return string(forKey: key)
   }
