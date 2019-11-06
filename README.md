@@ -15,8 +15,11 @@ HouLogger is a pretty, pure-Swift library for logging and saving log file in loc
 
 ## Start with HouLogger
 
-* BaseLogger() // Test Target 要測試時用這個
-* AdvancedLogger() // APP Target 用這個，此包含 UI 和 Log 檔案儲存。
+### Two import classes
+1. BaseLogger: Just Log
+1. AdvancedLogger: Sub class of BaseLogger. And it provides the ability to save log in files and show log on UIWindow and UIView
+1. LogTextView: Show Log UIView.
+
 ```swift
 // configure in `application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool`
     UserDefaults.standard.setAPPVersionAndHistory()
@@ -41,7 +44,7 @@ Print
 2019-11-06 10:55:11.877281+0800 HouLogger_Example[28550:8108832] [test] ⭐️ [❌ Fault] [AppDelegate.application(_:didFinishLaunchingWithOptions:):37] > fault
 ```
 ### A More Advanced Example
-Show Log Text View and save log file in cache directory
+#### Show Log Text View and save log file in cache directory
 ```swift
 logger.configure([.debug, .fault, .error, .info, .normal], shouldShow: true, shouldCache: true)
 ```
@@ -66,6 +69,12 @@ if #available(iOS 11.0, *) {
     }
   }
 ```
+#### Add custom JeOSLog
+You can add new case in JeOSLog enum in BaseLogger.swift file.
+
+##### Use HouLogger with Console APP
+<img src="logWithConsoleAPP.gif" width="280" />
+
 ## Requirements
 
 - iOS 10.0+
