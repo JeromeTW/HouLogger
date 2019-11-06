@@ -45,6 +45,7 @@ public enum LogLevel: Int, CustomStringConvertible {
   public let logger = BaseLogger() // Test Target 要測試時用這個
 #else
   public let logger = AdvancedLogger() // APP Target 用這個，此包含 UI 和 Log 檔案儲存。
+  public let logTextView = LogTextView()
 #endif
 
 public enum JeOSLog {
@@ -69,9 +70,9 @@ public enum JeOSLog {
 public class BaseLogger {
   // MARK: - Properties
 
-  private(set) var logLevels = [LogLevel]()
-  private(set) var shouldShow = false
-  private(set) var shouldCache = false
+  public var logLevels = [LogLevel]()
+  public var shouldShow = false
+  public var shouldCache = false
 
   init() {}
 

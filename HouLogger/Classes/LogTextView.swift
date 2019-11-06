@@ -6,13 +6,13 @@
 import UIKit
 
 public class LogTextView: UITextView {
-  override init(frame: CGRect, textContainer: NSTextContainer?) {
+  override public init(frame: CGRect, textContainer: NSTextContainer?) {
     super.init(frame: frame, textContainer: textContainer)
 
     setupStyle()
   }
 
-  required init?(coder _: NSCoder) {
+  required public init?(coder _: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 

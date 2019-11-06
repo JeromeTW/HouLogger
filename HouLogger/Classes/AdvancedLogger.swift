@@ -6,6 +6,14 @@ import DeviceGuru
 import UIKit
 
 public class AdvancedLogger: BaseLogger {
+  override func show(_ logString: String) {
+    if logTextView.contentSize.height < logTextView.frame.size.height {
+      logTextView.text += "\n\(logString)"
+    } else {
+      logTextView.text = logString
+    }
+  }
+
   override func cache(_ logString: String) {
     do {
       try FileManager.default.saveLog(logString)
