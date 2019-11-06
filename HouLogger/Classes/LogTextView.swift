@@ -5,7 +5,7 @@
 /// NOTE: Work with CGFloatExtension.swift file.
 import UIKit
 
-class LogTextView: UITextView {
+public class LogTextView: UITextView {
   override init(frame: CGRect, textContainer: NSTextContainer?) {
     super.init(frame: frame, textContainer: textContainer)
 
@@ -16,7 +16,7 @@ class LogTextView: UITextView {
     fatalError("init(coder:) has not been implemented")
   }
 
-  override func hitTest(_: CGPoint, with _: UIEvent?) -> UIView? {
+  override public func hitTest(_: CGPoint, with _: UIEvent?) -> UIView? {
     return nil
   }
 
@@ -28,15 +28,15 @@ class LogTextView: UITextView {
 }
 
 extension UIView {
-  typealias Constraint = (_ subview: UIView, _ superview: UIView) -> NSLayoutConstraint
+  public typealias Constraint = (_ subview: UIView, _ superview: UIView) -> NSLayoutConstraint
 
-  func addSubview(_ subview: UIView, constraints: [Constraint]) {
+  public func addSubview(_ subview: UIView, constraints: [Constraint]) {
     addSubview(subview)
     subview.translatesAutoresizingMaskIntoConstraints = false
     addConstraints(constraints.map { $0(subview, self) })
   }
 
-  func insertSubview(_ subview: UIView, at: Int, constraints: [Constraint]) {
+  public func insertSubview(_ subview: UIView, at: Int, constraints: [Constraint]) {
     insertSubview(subview, at: at)
     subview.translatesAutoresizingMaskIntoConstraints = false
     addConstraints(constraints.map { $0(subview, self) })
@@ -46,7 +46,7 @@ extension UIView {
   /// - Parameter subviewKeyPath: subview's KeyPath
   /// - Parameter superviewKeyPath: superview's KeyPath
   /// - Parameter constant: anchors distance constant
-  static func anchorConstraintEqual<LayoutAnchor, Axis>(from subviewKeyPath: KeyPath<UIView, LayoutAnchor>,
+  public static func anchorConstraintEqual<LayoutAnchor, Axis>(from subviewKeyPath: KeyPath<UIView, LayoutAnchor>,
                                                         to superviewKeyPath: KeyPath<UIView, LayoutAnchor>,
                                                         constant: CGFloat = 0.0) -> Constraint where LayoutAnchor: NSLayoutAnchor<Axis> {
     return { subview, superview in
@@ -59,7 +59,7 @@ extension UIView {
   /// ex: subview.topAnchor.constraint(equalTo: superview.topAnchor, constant: constant)
   /// - Parameter viewKeyPath: subview's and superview's KeyPath
   /// - Parameter constant: anchors distance constant
-  static func anchorConstraintEqual<LayoutAnchor, Axis>(with viewKeyPath: KeyPath<UIView, LayoutAnchor>,
+  public static func anchorConstraintEqual<LayoutAnchor, Axis>(with viewKeyPath: KeyPath<UIView, LayoutAnchor>,
                                                         constant: CGFloat = 0.0) -> Constraint where LayoutAnchor: NSLayoutAnchor<Axis> {
     return anchorConstraintEqual(from: viewKeyPath,
                                  to: viewKeyPath,

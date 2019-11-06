@@ -5,7 +5,7 @@
 import DeviceGuru
 import UIKit
 
-class AdvancedLogger: BaseLogger {
+public class AdvancedLogger: BaseLogger {
   override func cache(_ logString: String) {
     do {
       try FileManager.default.saveLog(logString)
@@ -16,11 +16,11 @@ class AdvancedLogger: BaseLogger {
 }
 
 extension FileManager {
-  var cachesDirectory: URL? {
+  public var cachesDirectory: URL? {
     return urls(for: .cachesDirectory, in: .userDomainMask).first
   }
 
-  func saveLog(_ logString: String) throws {
+  public func saveLog(_ logString: String) throws {
     guard let cachesDirectory = cachesDirectory else { return }
     let currentDateString = Date().toString(dateFormat: "yyyyMMdd")
     let filePath = cachesDirectory.appendingPathComponent("\(currentDateString).log")
@@ -52,12 +52,12 @@ extension FileManager {
 }
 
 extension UserDefaults {
-  var version: String {
+  public var version: String {
     let infoDictionary = Bundle.main.infoDictionary!
     return infoDictionary["CFBundleShortVersionString"] as! String
   }
 
-  func setAPPVersionAndHistory() {
+  public func setAPPVersionAndHistory() {
     let historyKey = "APPVersionsHistory"
     if var versionHistory = self.string(forKey: historyKey) {
       if lastVersion != version {
@@ -71,7 +71,7 @@ extension UserDefaults {
     setAPPVersion()
   }
 
-  var APPVersionsHistory: String {
+  public var APPVersionsHistory: String {
     let key = "APPVersionsHistory"
     guard let result = string(forKey: key) else {
       assertionFailure("Not set APPVersionsHistory")
@@ -80,12 +80,12 @@ extension UserDefaults {
     return result
   }
 
-  private func setAPPVersion() {
+  public func setAPPVersion() {
     let key = "APPVersion"
     set(version, forKey: key)
   }
 
-  var lastVersion: String? {
+  public var lastVersion: String? {
     let key = "APPVersion"
     return string(forKey: key)
   }

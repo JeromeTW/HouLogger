@@ -5,7 +5,7 @@
 import Foundation
 
 extension Date {
-  static func date(from dateString: String, format: String, abbreviation: String? = nil) -> Date? {
+  public static func date(from dateString: String, format: String, abbreviation: String? = nil) -> Date? {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = format
     dateFormatter.isLenient = true
@@ -15,7 +15,7 @@ extension Date {
     return dateFormatter.date(from: dateString)
   }
 
-  func toString(dateFormat: String) -> String {
+  public func toString(dateFormat: String) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = dateFormat
     return dateFormatter.string(from: self)

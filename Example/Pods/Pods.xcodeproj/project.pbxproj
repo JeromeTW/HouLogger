@@ -70,13 +70,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		055ABC47BD9853EAEDC193C1FD6D5000 /* DeviceGuru.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DeviceGuru.bundle; path = "DeviceGuru-DeviceGuru.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		055ABC47BD9853EAEDC193C1FD6D5000 /* DeviceGuru.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeviceGuru.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		07E9A0C1629618BA01D570620BC517F1 /* Pods-HouLogger_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HouLogger_Tests.modulemap"; sourceTree = "<group>"; };
 		157E2DF547254C6EBFE05A3837385D22 /* HouLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HouLogger.modulemap; sourceTree = "<group>"; };
 		1A576899B2D007EE9E2118108A426921 /* Pods-HouLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1D446796545A720F721C5BA2B661E857 /* DeviceGuru+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DeviceGuru+Extension.swift"; path = "Source/DeviceGuru+Extension.swift"; sourceTree = "<group>"; };
 		22FC74B2EF064112C6B9CCDF22935C11 /* HouLogger.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HouLogger.xcconfig; sourceTree = "<group>"; };
-		28A494133D74C0F85C6D17B1B90BFC10 /* HouLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HouLogger.framework; path = HouLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A494133D74C0F85C6D17B1B90BFC10 /* HouLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HouLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32D5E042322575DA60A0A0B9F86806AC /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1B0A61848353FF4800ABE0C83866B6 /* Pods-HouLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		477B211160F50E1C4333C1AA41D4AF2D /* DeviceGuru-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DeviceGuru-Info.plist"; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		4AC2216F749C51D8820DF8207394F1BC /* HouLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HouLogger-Info.plist"; sourceTree = "<group>"; };
 		4BA36CBAECA1E3B58039F839A6BA8409 /* HouLogger-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HouLogger-prefix.pch"; sourceTree = "<group>"; };
 		4E5D8E539F384EF38ED0C489E7C0F6B6 /* Pods-HouLogger_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Tests-Info.plist"; sourceTree = "<group>"; };
-		59AC47A9DF4FC84B6718E9BD31AE09BC /* Pods_HouLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HouLogger_Example.framework; path = "Pods-HouLogger_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59AC47A9DF4FC84B6718E9BD31AE09BC /* Pods_HouLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6449EE92ABB5E0FB8F3FD921B913ABDA /* Pods-HouLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		656D824F89EAC78324FBBD17DB13AF38 /* Pods-HouLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HouLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		664B0A4F5E8D23A87229588C1634D716 /* DeviceGuru.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DeviceGuru.xcconfig; sourceTree = "<group>"; };
@@ -97,19 +97,19 @@
 		85F8E97F20FFEC59A5188CCB39014BE9 /* Pods-HouLogger_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HouLogger_Example-frameworks.sh"; sourceTree = "<group>"; };
 		87AD7233CDBD4DC445AE64E18A11781B /* Pods-HouLogger_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HouLogger_Tests-dummy.m"; sourceTree = "<group>"; };
 		8A77413C2900C0DBC5201D69BC72B2B1 /* Hardware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Hardware.swift; path = Source/Hardware.swift; sourceTree = "<group>"; };
-		969D1740EACB89C7A3D3BBA68AB50810 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		969D1740EACB89C7A3D3BBA68AB50810 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9BD4B8A5723010F57339D888F22BEAEB /* Pods-HouLogger_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D406C8C17D886F82C3BBFA1A7B6BBE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D406C8C17D886F82C3BBFA1A7B6BBE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAEF75440ADD836270B6DA2589D5DD00 /* DeviceGuru-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DeviceGuru-dummy.m"; sourceTree = "<group>"; };
 		AE0F6CAF8A54C8379164DC8AD95B4D88 /* Pods-HouLogger_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HouLogger_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B4AF569F6233282A41FBBE23344286A5 /* Pods-HouLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HouLogger_Example-dummy.m"; sourceTree = "<group>"; };
 		BDDEB9A1D01780CC9DD012CB272C6222 /* Pods-HouLogger_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HouLogger_Example-Info.plist"; sourceTree = "<group>"; };
-		BF61CF023DC8F0D6A18A2862EB6FD7BF /* HouLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HouLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CA6838A33BB825F6FC72E0D4DB86C5F1 /* Pods_HouLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HouLogger_Tests.framework; path = "Pods-HouLogger_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF61CF023DC8F0D6A18A2862EB6FD7BF /* HouLogger.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HouLogger.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CA6838A33BB825F6FC72E0D4DB86C5F1 /* Pods_HouLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HouLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB48D609B9757010FFA3E7BB02E1F590 /* HouLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HouLogger-umbrella.h"; sourceTree = "<group>"; };
 		CE9B46C3760F4512A76B7CEAA54798D0 /* Pods-HouLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HouLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D09548CAD561FBEFD175953D5A21E031 /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DeviceGuru.framework; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09548CAD561FBEFD175953D5A21E031 /* DeviceGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D525FE3911C5941F5F1DAF943A4A2EB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DB151CA5A1288DA548D63329A69D6D7B /* DeviceGuru-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DeviceGuru-umbrella.h"; sourceTree = "<group>"; };
 		DBE35B54CB8D2BFEE0DBB2F45BB0993E /* Pods-HouLogger_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HouLogger_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -291,7 +291,6 @@
 				EB3E20ED20AF2D3EBD4A0F48C49243F0 /* Resources */,
 				DC8F1A1BB61833151A2890F2CB97C65B /* Support Files */,
 			);
-			name = DeviceGuru;
 			path = DeviceGuru;
 			sourceTree = "<group>";
 		};
@@ -706,7 +705,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HouLogger/HouLogger-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HouLogger/HouLogger-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HouLogger/HouLogger.modulemap";
 				PRODUCT_MODULE_NAME = HouLogger;
@@ -867,13 +866,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -930,7 +928,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1024,7 +1022,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/HouLogger/HouLogger-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/HouLogger/HouLogger-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/HouLogger/HouLogger.modulemap";
 				PRODUCT_MODULE_NAME = HouLogger;
