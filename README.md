@@ -73,7 +73,7 @@ if #available(iOS 11.0, *) {
 You can add new case in JeOSLog enum in BaseLogger.swift file.
 
 ##### Use HouLogger with Console APP
-<img src="logWithConsoleAPP.gif" width="280" />
+<img src="logWithConsoleAPP.gif"/>
 
 ## Requirements
 
