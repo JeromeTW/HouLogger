@@ -13,13 +13,13 @@ public enum LogLevel: Int, CustomStringConvertible {
     case .fault:
       return "❌ Fault"
     case .error:
-      return "‼️ Error"
+      return "💩 Error"
     case .debug:
-      return "🐌 Debug"
+      return "👨‍👩‍👧‍👦 Debug"
     case .info:
       return "📗 Info"
     case .normal:
-      return "🍋 Default"
+      return "😂 Default"
     }
   }
 
