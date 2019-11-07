@@ -3,40 +3,25 @@
 // Created by Jerome Hsieh.
 
 import Foundation
-import os
 
 // MARK: - NOTE: Need DateExtension.swift file
 
-public enum LogLevel: Int, CustomStringConvertible {
+public enum LogLevel: CustomStringConvertible {
+  case user
+  case code
+  case trace(issue: String)
+  case error(error: Error)
+  
   public var description: String {
     switch self {
-    case .fault:
-      return "❌ Fault"
-    case .error:
-      return "💩 Error"
-    case .debug:
-      return "👨‍👩‍👧‍👦 Debug"
-    case .info:
-      return "📗 Info"
-    case .normal:
-      return "😂 Default"
-    }
-  }
-
-  case fault, error, debug, info, normal
-
-  public var theOSLogType: OSLogType {
-    switch self {
-    case .fault:
-      return .fault
-    case .error:
-      return .error
-    case .debug:
-      return .debug
-    case .info:
-      return .info
-    case .normal:
-      return .default
+      case .user:
+        return "😂"
+      case .code:
+        return "💩"
+      case .trace:
+        return "🦋"
+      case .error:
+        return "❌"
     }
   }
 }
@@ -47,29 +32,8 @@ public enum LogLevel: Int, CustomStringConvertible {
   public let logger = AdvancedLogger() // APP Target 用這個，此包含 UI 和 Log 檔案儲存。
 #endif
 
-public enum JeOSLog {
-  public static let subsystem = "me.exmaple.Test"
-  case defaultLog, table, network, test, image
-  public var osLog: OSLog {
-    switch self {
-    case .table:
-      return OSLog(subsystem: JeOSLog.subsystem, category: "table")
-    case .defaultLog:
-      return OSLog(subsystem: JeOSLog.subsystem, category: "default")
-    case .network:
-      return OSLog(subsystem: JeOSLog.subsystem, category: "network")
-    case .test:
-      return OSLog(subsystem: JeOSLog.subsystem, category: "test")
-    case .image:
-      return OSLog(subsystem: JeOSLog.subsystem, category: "image")
-    }
-  }
-}
-
 public class BaseLogger {
   // MARK: - Properties
-
-  var logLevels = [LogLevel]()
   public var shouldShow = false
   public var shouldCache = false
 
@@ -77,90 +41,67 @@ public class BaseLogger {
 
   // MARK: - Public method
 
-  public func configure(_ logLevels: [LogLevel], shouldShow: Bool = false, shouldCache: Bool = false) {
-    self.logLevels = logLevels
+  public func configure(shouldShow: Bool = false, shouldCache: Bool = false) {
     self.shouldShow = shouldShow
     self.shouldCache = shouldCache
   }
 
-  func log(_ items: Any,
-           theOSLog: JeOSLog = JeOSLog.defaultLog,
-           level: LogLevel = .normal,
-           file: String,
-           function: String,
-           line: Int) {
-    #if DEBUG
-      if logLevels.contains(level) {
-        let fileName = file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? ""
-        let logString = "⭐️ [\(level.description)] [\(fileName).\(function):\(line)] > \(items)"
+  func log(_ message: Any, level: LogLevel, file: String, function: String, line: Int) {
+    let fileName = file.components(separatedBy: "/").last?.components(separatedBy: ".").first ?? ""
+    var logString = "⭐️\(level.description): "
+    switch level {
+      case .user:
+      //      CLSLogv("user: \(items)", getVaList([]))
+        #if DEBUG
+          logString += "\(message)"
+          print(logString)
+        #endif
+      case .code:
+//        CLSLogv("code: \(fileName) [\(line)], [\(function)]: \(message)", getVaList([]))
+        #if DEBUG
+          logString += "\(fileName) [\(line)], [\(function)]: \(message)"
+          print(logString)
+        #endif
+      case .trace(let issue):
+        #if DEBUG
+          logString += "\(issue), \(Date().toString(dateFormat: "HH:mm:ss")): \(message)"
+          print(logString)
+        #endif
+      case .error(let error):
+//        Crashlytics.sharedInstance().recordError(error,
+//                                                 withAdditionalUserInfo: ["error_detail": "\(fileName) [\(line)], [\(function)]: \(message), error: \(error.localizedDescription)"])
+        #if DEBUG
+          logString += "\(fileName) [\(line)], [\(function)]: \(message), error: \(error.localizedDescription)"
+          print(logString)
+        #endif
+    }
+    
 
-        os_log("%@", log: theOSLog.osLog, type: level.theOSLogType, logString)
+    if shouldShow {
+      show(logString)
+    }
 
-        if shouldShow {
-          show(logString)
-        }
-
-        if shouldCache {
-          cache(logString)
-        }
-      }
-    #endif
+    if shouldCache {
+      cache(logString)
+    }
   }
 
   func show(_: String) {} // 在 AdvancedLogger 中實作
   func cache(_: String) {} // 在 AdvancedLogger 中實作
 }
 
-public func logF(_ items: Any,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log(items, theOSLog: theOSLog, level: .fault, file: file, function: function, line: line)
-  // Need to import Crashlytics
-  //  Crashlytics.sharedInstance().recordError(error, withAdditionalUserInfo: ["msg":"\(items)"])
+public func logU(_ message: Any, file: String = #file, function: String = #function, line: Int = #line) {
+  logger.log(message, level: .user, file: file, function: function, line: line)
 }
 
-public func logE(_ items: Any,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log(items, theOSLog: theOSLog, level: .error, file: file, function: function, line: line)
-  // Need to import Crashlytics
-  // Crashlytics.sharedInstance().recordError(error, withAdditionalUserInfo: ["msg":"\(items)"])
+public func logC(_ message: Any, file: String = #file, function: String = #function, line: Int = #line) {
+  logger.log(message, level: .code, file: file, function: function, line: line)
 }
 
-public func logE(_ error: Error,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log("Error: \(error.localizedDescription)", theOSLog: theOSLog, level: .error, file: file, function: function, line: line)
-  // Need to import Crashlytics
-  // Crashlytics.sharedInstance().recordError(error, withAdditionalUserInfo: ["msg":error.localizedDescription])
+public func logT(issue: String, message: Any, file: String = #file, function: String = #function, line: Int = #line) {
+  logger.log(message, level: .trace(issue: issue), file: file, function: function, line: line)
 }
 
-public func logD(_ items: Any,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log(items, theOSLog: theOSLog, level: .debug, file: file, function: function, line: line)
-}
-
-public func logI(_ items: Any,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log(items, theOSLog: theOSLog, level: .info, file: file, function: function, line: line)
-}
-
-public func logN(_ items: Any,
-          theOSLog: JeOSLog = JeOSLog.defaultLog,
-          file: String = #file,
-          function: String = #function,
-          line: Int = #line) {
-  logger.log(items, theOSLog: theOSLog, level: .normal, file: file, function: function, line: line)
+public func logE(_ message: Any, error: Error, file: String = #file, function: String = #function, line: Int = #line) {
+  logger.log(message, level: .error(error: error), file: file, function: function, line: line)
 }

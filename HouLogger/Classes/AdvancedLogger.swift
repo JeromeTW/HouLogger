@@ -18,7 +18,7 @@ public class AdvancedLogger: BaseLogger {
     do {
       try FileManager.default.saveLog(logString)
     } catch {
-      logE(error)
+      logE("", error: error)
     }
   }
 }

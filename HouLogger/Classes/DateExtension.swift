@@ -8,6 +8,7 @@ extension Date {
   public static func date(from dateString: String, format: String, abbreviation: String? = nil) -> Date? {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = format
+    dateFormatter.timeZone = TimeZone.current
     dateFormatter.isLenient = true
     if let abbreviation = abbreviation {
       dateFormatter.timeZone = Foundation.TimeZone(abbreviation: abbreviation)
@@ -17,6 +18,7 @@ extension Date {
 
   public func toString(dateFormat: String) -> String {
     let dateFormatter = DateFormatter()
+    dateFormatter.timeZone = TimeZone.current
     dateFormatter.dateFormat = dateFormat
     return dateFormatter.string(from: self)
   }

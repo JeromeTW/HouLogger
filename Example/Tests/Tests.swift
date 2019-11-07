@@ -19,56 +19,36 @@ class Tests: XCTestCase {
     super.tearDown()
   }
   
-  func test_print_every_level() {
-    logger.configure([.fault, .error, .debug, .info, .normal], shouldShow: true, shouldCache: false)
-    let faultString = "faultString"
-    let errorString = "errorString"
-    let debugString = "debugString"
-    let infoString = "infoString"
-    let normalString = "normalString"
-    logF(faultString)
-    logE(errorString)
-    logD(debugString)
-    logI(infoString)
-    logN(normalString)
-    XCTAssert(logTextView.text.contains(faultString))
-    XCTAssert(logTextView.text.contains(errorString))
-    XCTAssert(logTextView.text.contains(debugString))
-    XCTAssert(logTextView.text.contains(infoString))
-    XCTAssert(logTextView.text.contains(normalString))
+  enum APIError: Error {
+    case invalidURL
   }
   
-  func test_print_some_levels() {
-    logger.configure([.fault, .error], shouldShow: true, shouldCache: false)
-    let faultString = "faultString"
+  func test_print_every_level() {
+    logger.configure(shouldShow: true, shouldCache: false)
+    let userString = "userString"
+    let codeString = "codeString"
+    let traceString = "traceString"
     let errorString = "errorString"
-    let debugString = "debugString"
-    let infoString = "infoString"
-    let normalString = "normalString"
-    logF(faultString)
-    logE(errorString)
-    logD(debugString)
-    logI(infoString)
-    logN(normalString)
-    XCTAssert(logTextView.text.contains(faultString))
+    logU(userString)
+    logC(codeString)
+    logT(issue: "#36", message: traceString)
+    logE(errorString, error: APIError.invalidURL)
+    XCTAssert(logTextView.text.contains(userString))    
+    XCTAssert(logTextView.text.contains(codeString))
+    XCTAssert(logTextView.text.contains(traceString))
     XCTAssert(logTextView.text.contains(errorString))
-    XCTAssert(logTextView.text.contains(debugString) == false)
-    XCTAssert(logTextView.text.contains(infoString) == false)
-    XCTAssert(logTextView.text.contains(normalString) == false)
   }
   
   func test_log_file_is_existed() {
-    logger.configure([.fault, .error, .debug, .info, .normal], shouldShow: false, shouldCache: true)
-    let faultString = "faultString"
+    logger.configure(shouldShow: false, shouldCache: true)
+    let userString = "userString"
+    let codeString = "codeString"
+    let traceString = "traceString"
     let errorString = "errorString"
-    let debugString = "debugString"
-    let infoString = "infoString"
-    let normalString = "normalString"
-    logF(faultString)
-    logE(errorString)
-    logD(debugString)
-    logI(infoString)
-    logN(normalString)
+    logU(userString)
+    logC(errorString)
+    logT(issue: "#36", message: traceString)
+    logE(errorString, error: APIError.invalidURL)
     let fileManager = FileManager.default
     guard let cachesDirectory = fileManager.cachesDirectory else { return }
     let currentDateString = Date().toString(dateFormat: "yyyyMMdd")

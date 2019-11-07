@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     UserDefaults.standard.setAPPVersionAndHistory()
-    logger.configure([.debug, .fault, .error, .info, .normal], shouldShow: true, shouldCache: true)
+    logger.configure(shouldShow: true, shouldCache: true)
     window = UIWindow(frame: UIScreen.main.bounds)
     guard let window = window else { fatalError() }
     window.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
@@ -29,12 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     setupLogTextView()
     
     // Demo
-    logI("info")
-    logD("debug")
-    logN("normal")
-    logE("Error String", theOSLog: .network)
-    logE(APIError.invalidURL, theOSLog: .network)
-    logF("fault", theOSLog: .test)
+    logU("user")
+    logC("code")
+    logT(issue: "#36", message: "issue")
+    logE("this is an error", error: APIError.invalidURL)
     
     return true
   }
