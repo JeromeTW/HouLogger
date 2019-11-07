@@ -98,10 +98,10 @@ public func logC(_ message: Any, file: String = #file, function: String = #funct
   logger.log(message, level: .code, file: file, function: function, line: line)
 }
 
-public func logT(issue: String, message: Any, file: String = #file, function: String = #function, line: Int = #line) {
+public func logT(issue: String = "", message: Any, file: String = #file, function: String = #function, line: Int = #line) {
   logger.log(message, level: .trace(issue: issue), file: file, function: function, line: line)
 }
 
-public func logE(_ message: Any, error: Error, file: String = #file, function: String = #function, line: Int = #line) {
+public func logE(_ message: Any = "", error: Error, file: String = #file, function: String = #function, line: Int = #line) {
   logger.log(message, level: .error(error: error), file: file, function: function, line: line)
 }
