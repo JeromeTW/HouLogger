@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
 [![Platform](https://img.shields.io/cocoapods/p/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
 
-HouLogger is a pretty, pure-Swift library for logging and saving log file in local disk. It provides you a chance to check log in Console APP.
+HouLogger is a pretty, lightweight, pure-Swift library for logging and saving log file in local disk.
 
 ## Features
 
@@ -39,12 +39,10 @@ HouLogger is a pretty, pure-Swift library for logging and saving log file in loc
 
 Print
 ```
-2019-11-06 10:55:11.836198+0800 HouLogger_Example[28550:8108832] [default] ⭐️ [📗 Info] [AppDelegate.application(_:didFinishLaunchingWithOptions:):32] > info
-2019-11-06 10:55:11.864916+0800 HouLogger_Example[28550:8108832] [default] ⭐️ [👨‍👩‍👧‍👦 Debug] [AppDelegate.application(_:didFinishLaunchingWithOptions:):33] > debug
-2019-11-06 10:55:11.867688+0800 HouLogger_Example[28550:8108832] [default] ⭐️ [😂 Default] [AppDelegate.application(_:didFinishLaunchingWithOptions:):34] > normal
-2019-11-06 10:55:11.869831+0800 HouLogger_Example[28550:8108832] [network] ⭐️ [💩 Error] [AppDelegate.application(_:didFinishLaunchingWithOptions:):35] > Error String
-2019-11-06 10:55:11.874609+0800 HouLogger_Example[28550:8108832] [network] ⭐️ [💩 Error] [AppDelegate.application(_:didFinishLaunchingWithOptions:):36] > Error: The operation couldn’t be completed. (HouLogger_Example.AppDelegate.APIError error 0.)
-2019-11-06 10:55:11.877281+0800 HouLogger_Example[28550:8108832] [test] ⭐️ [❌ Fault] [AppDelegate.application(_:didFinishLaunchingWithOptions:):37] > fault
+⭐️😂: user
+⭐️💩: AppDelegate [33], [application(_:didFinishLaunchingWithOptions:)]: code
+⭐️🦋: #36, 12:57:26 PM: issue
+⭐️❌: AppDelegate [35], [application(_:didFinishLaunchingWithOptions:)]: this is an error, error: The operation couldn’t be completed. (HouLogger_Example.AppDelegate.APIError error 0.)
 ```
 ### A More Advanced Example
 #### Show Log Text View and save log file in cache directory
