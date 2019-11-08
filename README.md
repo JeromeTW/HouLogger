@@ -1,14 +1,8 @@
 # HouLogger
 
-[![CI Status](https://img.shields.io/travis/jerome.developer.tw@gmail.com/HouLogger.svg?style=flat)](https://travis-ci.org/jerome.developer.tw@gmail.com/HouLogger)
 [![Version](https://img.shields.io/cocoapods/v/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
-[![License](https://img.shields.io/cocoapods/l/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
-[![Platform](https://img.shields.io/cocoapods/p/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
-[![CocoaPods](https://img.shields.io/cocoapods/dt/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
-[![CocoaPods](https://img.shields.io/cocoapods/at/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
 [![Platforms](https://img.shields.io/cocoapods/p/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
-[![Swift](http://img.shields.io/badge/swift-5.0-brightgreen.svg)](https://cocoapods.org/pods/HouLogger)
+[![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)](https://cocoapods.org/pods/HouLogger)
 [![License](https://img.shields.io/cocoapods/l/HouLogger.svg?style=flat)](#license)
 
 HouLogger is a pretty, lightweight, pure-Swift library for logging and saving log file in local disk.
