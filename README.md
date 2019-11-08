@@ -4,6 +4,12 @@
 [![Version](https://img.shields.io/cocoapods/v/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
 [![License](https://img.shields.io/cocoapods/l/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
 [![Platform](https://img.shields.io/cocoapods/p/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
+[![CocoaPods](https://img.shields.io/cocoapods/at/HouLogger.svg)](https://cocoapods.org/pods/HouLogger)
+[![Platforms](https://img.shields.io/cocoapods/p/HouLogger.svg?style=flat)](https://cocoapods.org/pods/HouLogger)
+[![Swift](http://img.shields.io/badge/swift-5.0-brightgreen.svg)](https://cocoapods.org/pods/HouLogger)
+[![License](https://img.shields.io/cocoapods/l/HouLogger.svg?style=flat)](#license)
 
 HouLogger is a pretty, lightweight, pure-Swift library for logging and saving log file in local disk.
 
@@ -25,16 +31,16 @@ HouLogger is a pretty, lightweight, pure-Swift library for logging and saving lo
 
 ```swift
 // configure in `application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool`
-    UserDefaults.standard.setAPPVersionAndHistory() // NOTE: Do not forget this line.
-    logger.configure([.debug, .fault, .error, .info, .normal])
+UserDefaults.standard.setAPPVersionAndHistory() // NOTE: Do not forget this line.
+logger.configure([.debug, .fault, .error, .info, .normal])
 
 // Usage
-    logI("info")
-    logD("debug")
-    logN("normal")
-    logE("Error String", theOSLog: .network)
-    logE(APIError.invalidURL, theOSLog: .network)
-    logF("fault", theOSLog: .test)
+logI("info")
+logD("debug")
+logN("normal")
+logE("Error String", theOSLog: .network)
+logE(APIError.invalidURL, theOSLog: .network)
+logF("fault", theOSLog: .test)
 ```
 
 Print
@@ -47,7 +53,7 @@ Print
 ### A More Advanced Example
 #### Show Log Text View and save log file in cache directory
 ```swift
-logger.configure([.debug, .fault, .error, .info, .normal], shouldShow: true, shouldCache: true)
+logger.configure(shouldShow: true, shouldCache: true)
 ```
 
 Add LogTextView in your UIWindow/UIView
@@ -70,12 +76,6 @@ if #available(iOS 11.0, *) {
     }
   }
 ```
-#### Add custom JeOSLog
-You can add new case in JeOSLog enum in BaseLogger.swift file.
-
-##### Use HouLogger with Console APP
-<img src="logWithConsoleAPP.gif"/>
-
 ## Requirements
 
 - iOS 10.0+
